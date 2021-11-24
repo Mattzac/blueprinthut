@@ -1,0 +1,26 @@
+.main-navbar {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homekey {
+  text-decoration: none;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.main-navbar {
+  text-align: center;
+}
+
+.subnav {
+  text-align: center;
+}
+
+.login{
+  text-decoration: none;
+}

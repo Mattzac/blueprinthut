@@ -1,11 +1,36 @@
-import './App.css';
+import React, { Fragment } from "react";
+import "./scss/custom.css";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+import Home from "./Components/Home/Home.js";
+import Namegenerator from "./Components/NameGenerator/Namegenerator.js";
+import Stories from "./Components/Stories/Stories.js";
+import Characters from "./Components/Characters/Characters";
+import Userlogin from "./Components/Userlogin/Userlogin";
+import Signin from "./Components/Userlogin/Signin";
+
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <div className="container-fluid">
+        <Router>
+          <Fragment>
+            <Navbar></Navbar>
+            <Routes>
+              <Route exact path="/" element={<Home />}></Route>
+              <Route path="/namegenerater" element={<Namegenerator />} />
+              <Route path="/stories" element={<Stories />} />
+              <Route path="/characters" element={<Characters />} />
+              <Route path="/userlogin" element={<Userlogin />} />
+              <Route path="/signin" element={<Signin />} />
+            </Routes>
+          </Fragment>
+        </Router>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
