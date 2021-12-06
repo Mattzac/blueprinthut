@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Characters";
+import CharactersCard from "./CharactersCard";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Characters = () => {
+
+  const [chars, setChars] = useState([ {"name" :"loading", "age":999, "imgsrc":"defaultchar", "skills":[] } ])
+
+  useEffect(() => {
+    getChar();
+  },[])
+
+  const getChar = async () => {
+    try {
+      const res = await axios.get("http://192.168.1.11:5000/characters");
+      setChars(res.data)
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="characters mt-3 mb-3">
       <div
@@ -44,59 +62,10 @@ const Characters = () => {
               />
             </div>
           </div>
-          <div className="col-md-2 d-flex justify-content-end">
-            <div className="dropdown">
-              <button
-                className="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Series
-              </button>
-              <div className="dropdown-menu">
-                <form>
-                  <div className="m-3">
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="dropdownCheck"
-                      />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
-                        StoryName1
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="dropdownCheck"
-                      />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
-                        StoryName2
-                      </label>
-                    </div>
-                    <div className="form-check">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        id="dropdownCheck"
-                      />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
-                        StoryName3
-                      </label>
-                    </div>
-                  </div>
-                  <button type="submit" className="m-2 btn btn-primary">
-                    Apply
-                  </button>
-                </form>
-              </div>
-            </div>
+          <div className="col-md-2 d-flex justify-content-center">
+            <Link className="btn btn-primary btn-sm" to="#" ><span>Create new character</span></Link>
           </div>
-          <div className="col-md-2 d-flex justify-content-end">
+          <div className="col-md-2 d-flex justify-content-center">
             <div className="dropdown">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -116,7 +85,10 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
+                      <label
+                        className="form-check-label"
+                        htmlFor="dropdownCheck"
+                      >
                         StoryName1
                       </label>
                     </div>
@@ -126,7 +98,10 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
+                      <label
+                        className="form-check-label"
+                        htmlFor="dropdownCheck"
+                      >
                         StoryName2
                       </label>
                     </div>
@@ -136,7 +111,10 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" htmlFor="dropdownCheck">
+                      <label
+                        className="form-check-label"
+                        htmlFor="dropdownCheck"
+                      >
                         StoryName3
                       </label>
                     </div>
@@ -150,7 +128,7 @@ const Characters = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <div className="col">262 results</div>
+          <div className="col">{chars.length} results</div>
           <div className="col d-flex justify-content-end">
             <span className="m-3">Sort By</span>
             <div className="dropdown">
@@ -178,31 +156,19 @@ const Characters = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-
-              <div className="card">
-                <img
-                  src="https://images.unsplash.com/photo-1601255596523-1ded45951ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-
-                  <h5 className="card-title">John "irony" Smith</h5>
-                  <h5 className="card-title">Age : 25</h5>
-                  <h5 className="card-title">Type : Fantasy</h5>
-
-                </div>
-                <a href="#" className="btn btn-primary">
-                  Button
-                </a>
-                <div className="card-footer">
-                  <small className="text-muted">Created on 11 Dec 2021</small>
-                </div>
-              </div>
-
-            </div>
+          <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-around">
+              {
+                chars.map( (char) => {
+                  return <CharactersCard
+                  key= {char.name}
+                  imgsrc = {`http://192.168.1.11:5000/images/imgs/usercimgs/${char.imgsrc}.jpg`}
+                  charName= {char.name}
+                  charAge={char.age}
+                  charSkills={char.skills}
+                  CDate="11/12/2021"
+                ></CharactersCard>
+                } )
+              }
           </div>
         </div>
       </div>

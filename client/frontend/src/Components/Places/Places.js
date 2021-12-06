@@ -193,7 +193,7 @@ const Places = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" className="btn btn-primary">
+                <a href=" " className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">
@@ -216,7 +216,7 @@ const Places = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" className="btn btn-primary">
+                <a href=" " className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">
@@ -239,7 +239,7 @@ const Places = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" className="btn btn-primary">
+                <a href=" " className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">

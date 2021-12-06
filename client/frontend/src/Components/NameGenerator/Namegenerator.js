@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Avatar from "avataaars";
 import { generateRandomAvatarOptions } from "../../Avatars/Avatars";
@@ -9,7 +9,9 @@ const Namegenerator = () => {
 
   const getName = async () => {
     try {
-      const response = await axios.get(`http://192.168.1.11:5000/${type}`);
+      const response = await axios.get(
+        `http://192.168.1.11:5000/namegen/${type}`
+      );
       const pickedname = response.data.namepicked;
       setNgname(pickedname);
       console.log(response);
@@ -26,8 +28,6 @@ const Namegenerator = () => {
   const handlepick = () => {
     getName();
   };
-
-  useEffect(() => {}, []);
 
   return (
     <div className="namegenerator">
@@ -58,6 +58,7 @@ const Namegenerator = () => {
             </p>
             <div className="btns my-5">
               <a
+                href=" "
                 onClick={(e) => {
                   handletype(e);
                 }}
@@ -66,6 +67,7 @@ const Namegenerator = () => {
                 ALL
               </a>
               <a
+                href=" "
                 onClick={(e) => {
                   handletype(e);
                 }}
@@ -74,6 +76,7 @@ const Namegenerator = () => {
                 Male
               </a>
               <a
+                href=" "
                 onClick={(e) => {
                   handletype(e);
                 }}
@@ -82,6 +85,7 @@ const Namegenerator = () => {
                 Female
               </a>
               <a
+                href=" "
                 onClick={(e) => {
                   handletype(e);
                 }}
@@ -90,7 +94,7 @@ const Namegenerator = () => {
                 Fantasy
               </a>
             </div>
-            <a onClick={handlepick} className="p-3 me-4 my-5 btn btn-warning">
+            <a href=" " onClick={handlepick} className="p-3 me-4 my-5 btn btn-warning">
               Feeling lucky!
             </a>
           </div>
