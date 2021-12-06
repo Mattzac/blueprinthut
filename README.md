@@ -1,1 +1,1 @@
-<h1>Blueprint of your own stories</h1>
+<h1>It is the Blueprint of your own stories</h1>

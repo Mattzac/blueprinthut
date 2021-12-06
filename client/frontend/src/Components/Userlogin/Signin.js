@@ -15,7 +15,7 @@ function Signin() {
                 ")",
             }}
           >
-            <h1 className="display-4">Sign in for more funtcionality</h1>
+            <h1 className="display-4">Sign in htmlFor more funtcionality</h1>
           </div>
         </div>
         <div className="row bg-light justify-content-center text-center">
@@ -35,7 +35,7 @@ function Signin() {
             <h1 className="h3 py-5" >Create Account</h1>
             <form className="my-3" >
               <div className="w-50 ms-auto me-auto mb-4">
-                <label for="exampleInputEmail1" className="form-label">
+                <label htmlFor="exampleInputEmail1" className="form-label">
                   Email address
                 </label>
                 <input
@@ -49,7 +49,7 @@ function Signin() {
                 </div>
               </div>
               <div className="w-50 ms-auto me-auto mb-4">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Password
                 </label>
                 <input
@@ -59,7 +59,7 @@ function Signin() {
                 />
               </div>
               <div className="w-50 ms-auto me-auto mb-4">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Confirm Password
                 </label>
                 <input
@@ -69,7 +69,7 @@ function Signin() {
                 />
               </div>
               <div className="w-50 ms-auto me-auto mb-4">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   How do we call you? 
                 </label>
                 <input

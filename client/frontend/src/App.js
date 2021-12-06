@@ -10,6 +10,8 @@ import Stories from "./Components/Stories/Stories.js";
 import Characters from "./Components/Characters/Characters";
 import Userlogin from "./Components/Userlogin/Userlogin";
 import Signin from "./Components/Userlogin/Signin";
+import Places from "./Components/Places/Places";
+import Items from "./Components/Items/Items";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
               <Route exact path="/" element={<Home />}></Route>
               <Route path="/namegenerator" element={<Namegenerator />} />
               <Route path="/stories" element={<Stories />} />
+              <Route path="/places" element={<Places />} />
+              <Route path="/items" element={<Items />} />
               <Route path="/characters" element={<Characters />} />
               <Route path="/userlogin" element={<Userlogin />} />
               <Route path="/signin" element={<Signin />} />

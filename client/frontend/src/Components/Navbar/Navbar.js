@@ -28,10 +28,16 @@ const Navbar = () => {
                 <Link className="nav-link " to="/stories" >Stories</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to="/characters" >Characters</Link>
+                <Link className="nav-link " to="/places" >Places</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to="/userlogin" >User Login</Link>
+                <Link className="nav-link " to="/items" >Items</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link " to="/characters" >Characters</Link>
+              </li>
+              <li className="nav-item ms-auto">
+                <Link className="nav-link " to="/userlogin" >UserLogin</Link>
               </li>
             </ul>
           </div>

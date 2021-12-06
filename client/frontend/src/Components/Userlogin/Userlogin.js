@@ -49,7 +49,7 @@ const Userlogin = () => {
                 </div>
               </div>
               <div className="w-50 ms-auto me-auto mb-4">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Password
                 </label>
                 <input

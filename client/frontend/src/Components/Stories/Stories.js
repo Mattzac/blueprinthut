@@ -63,7 +63,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName1
                       </label>
                     </div>
@@ -73,7 +73,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName2
                       </label>
                     </div>
@@ -83,7 +83,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName3
                       </label>
                     </div>
@@ -115,7 +115,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName1
                       </label>
                     </div>
@@ -125,7 +125,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName2
                       </label>
                     </div>
@@ -135,7 +135,7 @@ const Stories = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName3
                       </label>
                     </div>
@@ -193,7 +193,7 @@ const Stories = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">
@@ -216,7 +216,7 @@ const Stories = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">
@@ -239,7 +239,7 @@ const Stories = () => {
                     longer.
                   </p>
                 </div>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">

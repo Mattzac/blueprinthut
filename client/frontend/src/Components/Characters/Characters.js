@@ -64,7 +64,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName1
                       </label>
                     </div>
@@ -74,7 +74,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName2
                       </label>
                     </div>
@@ -84,7 +84,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName3
                       </label>
                     </div>
@@ -116,7 +116,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName1
                       </label>
                     </div>
@@ -126,7 +126,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName2
                       </label>
                     </div>
@@ -136,7 +136,7 @@ const Characters = () => {
                         className="form-check-input"
                         id="dropdownCheck"
                       />
-                      <label className="form-check-label" for="dropdownCheck">
+                      <label className="form-check-label" htmlFor="dropdownCheck">
                         StoryName3
                       </label>
                     </div>
@@ -180,133 +180,28 @@ const Characters = () => {
         <div className="row mb-3">
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
-              <div className="card h-100">
+
+              <div className="card">
                 <img
                   src="https://images.unsplash.com/photo-1601255596523-1ded45951ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                   className="card-img-top"
                   alt="..."
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+
+                  <h5 className="card-title">John "irony" Smith</h5>
+                  <h5 className="card-title">Age : 25</h5>
+                  <h5 className="card-title">Type : Fantasy</h5>
+
                 </div>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Button
                 </a>
                 <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
+                  <small className="text-muted">Created on 11 Dec 2021</small>
                 </div>
               </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img
-                  src="https://images.unsplash.com/photo-1541562232579-512a21360020?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <a href="#" class="btn btn-primary">
-                  Button
-                </a>
-                <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img
-                  src="https://images.unsplash.com/photo-1546938576-7d56dda5e7d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <a href="#" class="btn btn-primary">
-                  Button
-                </a>
-                <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img
-                  src="https://images.unsplash.com/photo-1601255596523-1ded45951ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img
-                  src="https://images.unsplash.com/photo-1601255596523-1ded45951ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img
-                  src="https://images.unsplash.com/photo-1601255596523-1ded45951ed4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <div className="card-footer">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
